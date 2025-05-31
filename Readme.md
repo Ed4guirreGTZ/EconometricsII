@@ -35,22 +35,22 @@ También puedes usar `openpyxl` si deseas exportar a Excel (actualmente comentad
 ```bash
 pip install -r requirements.txt
 ---
+## 🔐 Configuración de la API
 
-🔐 Configuración de la API
-Crea una clave de API en Google Cloud Console.
-Crea un archivo .env en la raíz del proyecto con esta línea:
----
-
-API_KEY=tu_clave_api
+1. Ve a [Google Cloud Console](https://console.cloud.google.com/), crea un nuevo proyecto y habilita la **YouTube Data API v3**.
+2. Dirígete a la sección "Credenciales" y genera una **clave de API**.
+3. Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido: API_KEY=tu_clave_api
 
 ---
-
-▶️ Cómo ejecutar el script
-Asegúrate de tener el entorno configurado.
-
-Ejecuta el script desde la carpeta raíz:
+> ⚠️ **Importante:** No compartas este archivo públicamente ni lo subas al repositorio. Asegúrate de incluir `.env` en tu archivo `.gitignore`.
 
 ---
 
+## ▶️ Cómo ejecutar el script
 
+Una vez configurada la clave de API y el entorno, ejecuta el script desde la raíz del proyecto:
+
+```bash
 python code/scrape_comments.py
+
+

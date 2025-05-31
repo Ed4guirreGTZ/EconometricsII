@@ -24,18 +24,6 @@ El script realiza las siguientes tareas:
 
 ---
 
-## 🗂️ Estructura del proyecto
-EconometricsII/
-├── README.md
-├── .gitignore
-├── requirements.txt
-├── code/
-│ └── scrape_comments.py # Script principal
-└── data/
-└── Veritasium_comments.csv # Archivo de salida generado
-
----
-
 ## ⚙️ Requisitos
 
 Este script requiere Python 3 y las siguientes bibliotecas:

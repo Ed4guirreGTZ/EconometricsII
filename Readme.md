@@ -34,6 +34,7 @@ También puedes usar `openpyxl` si deseas exportar a Excel (actualmente comentad
 ### ✅ Instalación
 ```bash
 pip install -r requirements.txt
+```
 ---
 ## 🔐 Configuración de la API
 
@@ -52,5 +53,6 @@ Una vez configurada la clave de API y el entorno, ejecuta el script desde la ra�
 
 ```bash
 python code/scrape_comments.py
+```
 
 

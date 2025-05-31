@@ -1,30 +1,48 @@
-🧠 YouTube Comment Scraper – Veritasium
-Este proyecto implementa un scraper en Python que utiliza la YouTube Data API v3 para recopilar información pública sobre los videos más recientes del canal Veritasium y sus comentarios.
+# 📺 YouTube Comment Scraper – Veritasium Channel
 
-El objetivo es generar una base de datos estructurada con metadatos de los videos (como título, URL y fecha de publicación) junto con los comentarios top-level de los usuarios. Esta información puede ser usada para análisis de contenido, minería de texto, visualizaciones o investigaciones sobre participación del público.
-🛠 Características principales
-🔍 Busca automáticamente el canal oficial de Veritasium
+Este proyecto implementa un script en Python que utiliza la **YouTube Data API v3** para obtener los videos más recientes del canal [Veritasium](https://www.youtube.com/user/1veritasium), junto con los comentarios públicos disponibles de cada video.
 
-📥 Recupera hasta 50 videos más recientes
+---
 
-💬 Extrae hasta 50 comentarios por video
+## 🧰 Funcionalidad
 
-🗃 Genera una tabla con:
+El script realiza las siguientes tareas:
 
-Título del video
+- 🔍 Busca automáticamente el canal de YouTube llamado **Veritasium**.
+- 📥 Recupera hasta 50 videos recientes del canal.
+- 💬 Extrae hasta 50 comentarios por video:
+  - Texto del comentario
+  - Autor del comentario
+  - Fecha de publicación
+  - Número de likes
+- 🧾 Almacena metadatos por video:
+  - Título del video
+  - URL del video
+  - Fecha de publicación
+  - Nombre del canal
+- 📄 Exporta los resultados como archivo `.csv` para su posterior análisis.
 
-URL
+---
 
-Fecha de publicación
+## 🗂️ Estructura del proyecto
+EconometricsII/
+├── README.md
+├── .gitignore
+├── requirements.txt
+├── code/
+│ └── scrape_comments.py # Script principal
+└── data/
+└── Veritasium_comments.csv # Archivo de salida generado
 
-Nombre del canal
+---
 
-Comentario
+## ⚙️ Requisitos
 
-Autor del comentario
-
-Fecha del comentario
-
-Likes del comentario
-
-📁 Guarda los resultados en un archivo CSV ubicado en data/Veritasium_comments.csv
+Este script requiere Python 3 y las siguientes bibliotecas:
+- `pandas`
+- `google-api-python-client`
+- `python-dotenv`
+También puedes usar `openpyxl` si deseas exportar a Excel (actualmente comentado en el código).
+### ✅ Instalación
+```bash
+pip install -r requirements.txt

@@ -34,18 +34,23 @@ También puedes usar `openpyxl` si deseas exportar a Excel (actualmente comentad
 ### ✅ Instalación
 ```bash
 pip install -r requirements.txt
+---
 
 🔐 Configuración de la API
 Crea una clave de API en Google Cloud Console.
-
 Crea un archivo .env en la raíz del proyecto con esta línea:
+---
+
 API_KEY=tu_clave_api
 
+---
 
 ▶️ Cómo ejecutar el script
 Asegúrate de tener el entorno configurado.
 
 Ejecuta el script desde la carpeta raíz:
 
+---
+
+
 python code/scrape_comments.py
-  
